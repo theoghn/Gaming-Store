@@ -882,7 +882,11 @@ int main(){
                 int idd;
                 cout<<"\n Adauga Tastatura cu id:";
                 cin>> idd;
-                c1+listaTastatura[idd-1];    
+                if(idd>0&&idd<=contorTastatura){
+                    c1+listaTastatura[idd-1];      
+                }
+                  
+                   
                 break;
                 }
             case 2:{
@@ -893,7 +897,10 @@ int main(){
                 int idd;
                 cout<<"\n Adauga Casti cu id:";
                 cin>> idd;
-                c1+listaCasti[idd-1];           
+                if(idd>0&&idd<=contorCasti){
+                    c1+listaCasti[idd-1];     
+                }
+                        
                 break;
                 }
             case 3:{
@@ -904,7 +911,10 @@ int main(){
                 int idd;
                 cout<<"\n Adauga Mouse cu id:";
                 cin>> idd;
-                c1+listaMouse[idd-1];   
+                if(idd>0&&idd<=contorMouse){
+                    c1+listaMouse[idd-1];     
+                }
+                 
 
                 
                 break;
@@ -917,7 +927,10 @@ int main(){
                 int idd;
                 cout<<"\n Adauga MousePad cu id:";
                 cin>> idd;
-                c1+listaMousePad[idd-1];   
+                if(idd>0&&idd<=contorMousePad){
+                    c1+listaMousePad[idd-1];   
+                }
+                
                 break;
             }
             case 5:{
@@ -1014,6 +1027,7 @@ int main(){
             for(int i=0; i<contorMouse;i++)
                 cout<<listaMouse[i]<<endl;
             string p;
+            cout<<"\n Introduce orice pentru a parasi";
             cin >>p;
 
             
